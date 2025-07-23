@@ -5,7 +5,7 @@ function onSubmitHandler(e) {
     }
     axios.post("http://localhost:3000/products", obj)
         .then(result=>{
-            console.log(`The name of the product is ${result.data.name}`)
+            console.log(`The name of the product is ${result.data.data.name}`)
         })
         .catch(err=>console.log(err))
 }
