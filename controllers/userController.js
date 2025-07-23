@@ -7,12 +7,12 @@ const getUserById=(req,res)=>{
     res.send(`Fetching user with ID : ${id}`)
 }
 
-const postUser=(req,res)=>{
+const addUser=(req,res)=>{
     res.send("Adding a new user");
 }
 
 module.exports={
     getAllUsers,
     getUserById,
-    postUser
+    addUser
 }

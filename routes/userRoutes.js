@@ -6,6 +6,6 @@ router.get('/',userControllers.getAllUsers)
 
 router.get('/:userId',userControllers.getUserById)
 
-router.post('/',userControllers.postUser)
+router.post('/',userControllers.addUser)
 
 module.exports=router;
