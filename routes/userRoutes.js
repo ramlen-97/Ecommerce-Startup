@@ -2,10 +2,10 @@ const express=require('express');
 const router=express.Router();
 const userControllers=require("../controllers/userController");
 
-router.get('/',userControllers.getAllUsers)
+router.get('/users',userControllers.getAllUsers)
 
-router.get('/:userId',userControllers.getUserById)
+router.get('/users/:userId',userControllers.getUserById)
 
-router.post('/',userControllers.addUser)
+router.post('/users',userControllers.addUser)
 
 module.exports=router;

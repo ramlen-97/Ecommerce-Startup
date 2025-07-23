@@ -2,10 +2,10 @@ const express=require('express');
 const router=express.Router();
 const productControllers=require('../controllers/productController');
 
-router.get('/',productControllers.getAllProducts)
+router.get('/products',productControllers.getAllProducts)
 
-router.get('/:productId',productControllers.getProductById)
+router.get('/products/:productId',productControllers.getProductById)
 
-router.post('/',productControllers.addProduct);
+router.post('/products',productControllers.addProduct);
 
 module.exports=router;
